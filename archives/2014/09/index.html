@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,17 +20,24 @@
     <meta property="og:image" content="undefined"/>
   
 
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
   <link rel="alternate" href="/atom.xml" title="遂州创信" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffe3814b5f53cc394a493cbeb2368f2af' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
 
 </head>
 
 
 <body>
-  <header id="header" class="inner"><div class="alignleft">
+  <header id="header" class="inner">
+<div class="alignleft">
   <h1><a href="/">遂州创信</a></h1>
   <h2><a href="/">蓝江老涌的博客</a></h2>
 </div>
@@ -37,12 +46,162 @@
     
       <li><a href="/">首页</a></li>
     
-      <li><a href="/archives">存档</a></li>
+      <li><a href="/archives">归档</a></li>
     
       <li><a href="/about">关于</a></li>
     
-      <li><a href="/todolist">ToDo</a></li>
-    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
   </ul>
   <div class="clearfix"></div>
 </nav>
@@ -70,9 +229,309 @@
         <div class="post-content">
           <header>
             <div class="icon"></div>
-            <time datetime="2014-09-30T08:57:31.000Z"><a href="/2014/09/30/hello-world/">2014-09-30</a></time>
+            <time datetime="2014-09-26T15:23:41.000Z"><a href="/2014/09/26/-e4-bb-8a-e5-a4-a9-e6-94-b6-e5-88-b05-e9-94-ae-e9-bc-a0-e6-a0-87-e3-80-82-e6-89-be-e4-ba-86-e4-b8-80-e4-b8-aa-e6-94-b9-e4-be-a7-e9-94-ae-e8-bd-af-e4-bb-b6-e3-80-82/">2014-09-26</a></time>
             
-              <h1 class="title"><a href="/2014/09/30/hello-world/">你好，Hexo</a></h1>
+              <h1 class="title"><a href="/2014/09/26/-e4-bb-8a-e5-a4-a9-e6-94-b6-e5-88-b05-e9-94-ae-e9-bc-a0-e6-a0-87-e3-80-82-e6-89-be-e4-ba-86-e4-b8-80-e4-b8-aa-e6-94-b9-e4-be-a7-e9-94-ae-e8-bd-af-e4-bb-b6-e3-80-82/">今天收到5键鼠标。找了一个改侧键软件。</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-26T13:10:45.000Z"><a href="/2014/09/26/-e7-94-b5-e5-bd-b1-e3-80-8a-e6-b2-89-e7-9d-a1-e9-ad-94-e5-92-92-e3-80-8b/">2014-09-26</a></time>
+            
+              <h1 class="title"><a href="/2014/09/26/-e7-94-b5-e5-bd-b1-e3-80-8a-e6-b2-89-e7-9d-a1-e9-ad-94-e5-92-92-e3-80-8b/">电影《沉睡魔咒》</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-25T12:19:59.000Z"><a href="/2014/09/25/microsoft-office-2007-sp3-3in1-e7-bb-bf-e8-89-b2-e7-89-88/">2014-09-25</a></time>
+            
+              <h1 class="title"><a href="/2014/09/25/microsoft-office-2007-sp3-3in1-e7-bb-bf-e8-89-b2-e7-89-88/">Microsoft Office 2007 SP3 3in1 绿色版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-25T01:30:16.000Z"><a href="/2014/09/25/wifi-e4-b8-87-e8-83-bd-e9-92-a5-e5-8c-99-wifi-master-v2-9-39-e5-8e-bb-e5-b9-bf-e5-91-8a-e6-b8-85-e7-88-bd-e7-89-88/">2014-09-25</a></time>
+            
+              <h1 class="title"><a href="/2014/09/25/wifi-e4-b8-87-e8-83-bd-e9-92-a5-e5-8c-99-wifi-master-v2-9-39-e5-8e-bb-e5-b9-bf-e5-91-8a-e6-b8-85-e7-88-bd-e7-89-88/">WIFI万能钥匙_WiFi Master_V2.9.39_去广告清爽版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-24T01:34:47.000Z"><a href="/2014/09/24/-e9-86-89-e9-85-92-e5-90-8e-e5-90-83-e4-bb-80-e4-b9-88-e5-af-b9-e8-ba-ab-e4-bd-93-e5-a5-bd-ef-bc-9f/">2014-09-24</a></time>
+            
+              <h1 class="title"><a href="/2014/09/24/-e9-86-89-e9-85-92-e5-90-8e-e5-90-83-e4-bb-80-e4-b9-88-e5-af-b9-e8-ba-ab-e4-bd-93-e5-a5-bd-ef-bc-9f/">醉酒后吃什么对身体好？</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-23T10:21:02.000Z"><a href="/2014/09/23/-e4-bb-8a-e5-a4-a9-e8-b4-ad-e4-b9-b0-e4-ba-86-e6-96-b0-e5-9f-9f-e5-90-8d-ef-bc-9aszcx-pw/">2014-09-23</a></time>
+            
+              <h1 class="title"><a href="/2014/09/23/-e4-bb-8a-e5-a4-a9-e8-b4-ad-e4-b9-b0-e4-ba-86-e6-96-b0-e5-9f-9f-e5-90-8d-ef-bc-9aszcx-pw/">今天购买了新域名：szcx.pw以及琥珀主机</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-22T03:08:04.000Z"><a href="/2014/09/22/-e4-bb-8a-e5-a4-a9-e7-9c-8b-e4-ba-86-e4-b8-80-e4-b8-8b-e5-8d-ab-e6-98-9f-e5-9c-b0-e5-9b-be-e3-80-82-e8-83-bd-e6-89-be-e5-88-b0-e8-80-81-e5-ae-b6-e7-9a-84-e6-88-bf-e5-ad-90-e3-80-82-e8-bf-98-e6-9c-89/">2014-09-22</a></time>
+            
+              <h1 class="title"><a href="/2014/09/22/-e4-bb-8a-e5-a4-a9-e7-9c-8b-e4-ba-86-e4-b8-80-e4-b8-8b-e5-8d-ab-e6-98-9f-e5-9c-b0-e5-9b-be-e3-80-82-e8-83-bd-e6-89-be-e5-88-b0-e8-80-81-e5-ae-b6-e7-9a-84-e6-88-bf-e5-ad-90-e3-80-82-e8-bf-98-e6-9c-89/">今天看了一下卫星地图。能找到老家的房子。还有学校的图。</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-22T02:10:19.000Z"><a href="/2014/09/22/-e6-98-a0-e5-83-8f-e7-bc-96-e8-be-91-e5-88-b6-e4-bd-9c-ultraiso-pe-v9-6-2-3059-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">2014-09-22</a></time>
+            
+              <h1 class="title"><a href="/2014/09/22/-e6-98-a0-e5-83-8f-e7-bc-96-e8-be-91-e5-88-b6-e4-bd-9c-ultraiso-pe-v9-6-2-3059-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">映像编辑制作 UltraISO PE v9.6.2.3059 绿色便携版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-22T01:00:11.000Z"><a href="/2014/09/22/-e5-a6-82-e4-bb-8a-e7-9a-84-e5-9b-bd-e4-ba-a7-e5-8a-a8-e7-94-bb-e7-89-87-e6-80-8e-e4-b9-88-e4-ba-86-ef-bc-9f-e5-9b-bd-e4-ba-a7-e5-8a-a8-e7-94-bb-e8-a6-81-e8-ae-a9-e6-88-91-e5-a4-b1-e6-9c-9b-e5-88-b0/">2014-09-22</a></time>
+            
+              <h1 class="title"><a href="/2014/09/22/-e5-a6-82-e4-bb-8a-e7-9a-84-e5-9b-bd-e4-ba-a7-e5-8a-a8-e7-94-bb-e7-89-87-e6-80-8e-e4-b9-88-e4-ba-86-ef-bc-9f-e5-9b-bd-e4-ba-a7-e5-8a-a8-e7-94-bb-e8-a6-81-e8-ae-a9-e6-88-91-e5-a4-b1-e6-9c-9b-e5-88-b0/">如今的国产动画片怎么了？国产动画要让我失望到何时？</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-20T13:31:53.000Z"><a href="/2014/09/20/-e6-80-80-e5-bf-b5-e7-88-b6-e4-ba-b2/">2014-09-20</a></time>
+            
+              <h1 class="title"><a href="/2014/09/20/-e6-80-80-e5-bf-b5-e7-88-b6-e4-ba-b2/">怀念父亲</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-17T08:41:04.000Z"><a href="/2014/09/17/-e6-97-a0-e5-81-bf-e7-8c-ae-e8-a1-80/">2014-09-17</a></time>
+            
+              <h1 class="title"><a href="/2014/09/17/-e6-97-a0-e5-81-bf-e7-8c-ae-e8-a1-80/">无偿献血</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-16T10:22:08.000Z"><a href="/2014/09/16/-e8-bd-af-e4-bb-b6-e5-8d-b8-e8-bd-bd-e5-99-a8-uninstall-tool-v3-4-0-5354-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">2014-09-16</a></time>
+            
+              <h1 class="title"><a href="/2014/09/16/-e8-bd-af-e4-bb-b6-e5-8d-b8-e8-bd-bd-e5-99-a8-uninstall-tool-v3-4-0-5354-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">软件卸载器 Uninstall Tool v3.4.0.5354 绿色便携版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-16T10:02:58.000Z"><a href="/2014/09/16/-e5-85-b1-e4-ba-abpdf-e9-98-85-e8-af-bb-e5-99-a8-pdf-xchange-viewer-v2-5-309-0-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">2014-09-16</a></time>
+            
+              <h1 class="title"><a href="/2014/09/16/-e5-85-b1-e4-ba-abpdf-e9-98-85-e8-af-bb-e5-99-a8-pdf-xchange-viewer-v2-5-309-0-e7-bb-bf-e8-89-b2-e4-be-bf-e6-90-ba-e7-89-88/">共享PDF阅读器 PDF-XChange Viewer v2.5.309.0 绿色便携版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-16T09:38:31.000Z"><a href="/2014/09/16/-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-google-chrome-v37-0-2062-120-e4-be-bf-e6-90-ba-e5-a2-9e-e5-bc-ba-e7-89-88/">2014-09-16</a></time>
+            
+              <h1 class="title"><a href="/2014/09/16/-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-google-chrome-v37-0-2062-120-e4-be-bf-e6-90-ba-e5-a2-9e-e5-bc-ba-e7-89-88/">谷歌浏览器 Google Chrome v37.0.2062.120 便携增强版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-16T02:07:57.000Z"><a href="/2014/09/16/-e6-ac-a3-e8-a8-80-e4-bd-9c-e6-96-87/">2014-09-16</a></time>
+            
+              <h1 class="title"><a href="/2014/09/16/-e6-ac-a3-e8-a8-80-e4-bd-9c-e6-96-87/">欣言作文</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-15T01:58:08.000Z"><a href="/2014/09/15/-e6-98-93-e8-a7-86-e5-ae-9d-ef-bc-8c-e6-9c-ba-e9-a1-b6-e7-9b-92-e7-9c-8b-e7-9b-b4-e6-92-ad-e5-b7-b2-e8-a7-a3-e5-86-b3/">2014-09-15</a></time>
+            
+              <h1 class="title"><a href="/2014/09/15/-e6-98-93-e8-a7-86-e5-ae-9d-ef-bc-8c-e6-9c-ba-e9-a1-b6-e7-9b-92-e7-9c-8b-e7-9b-b4-e6-92-ad-e5-b7-b2-e8-a7-a3-e5-86-b3/">易视宝，机顶盒看直播已解决</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-15T01:30:28.000Z"><a href="/2014/09/15/notepad-v6-6-9-e7-89-b9-e8-89-b2-e7-bc-96-e8-be-91-e5-99-a8-e3-80-81-e6-94-af-e6-8c-81-e8-af-ad-e6-b3-95-e9-ab-98-e4-ba-ae/">2014-09-15</a></time>
+            
+              <h1 class="title"><a href="/2014/09/15/notepad-v6-6-9-e7-89-b9-e8-89-b2-e7-bc-96-e8-be-91-e5-99-a8-e3-80-81-e6-94-af-e6-8c-81-e8-af-ad-e6-b3-95-e9-ab-98-e4-ba-ae/">Notepad++ V6.6.9 - 特色编辑器、支持语法高亮</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-12T03:04:59.000Z"><a href="/2014/09/12/-e6-95-99-e5-b8-88-e8-8a-82-e6-9d-a5-e4-ba-86-ef-bc-8c-e7-a5-9d-e5-a4-a9-e4-b8-8b-e7-9a-84-e8-80-81-e5-b8-88-e5-bf-ab-e4-b9-90-ef-bc-81-e7-a5-9d-e8-87-aa-e5-b7-b1-e5-bf-ab-e4-b9-90-ef-bc-81/">2014-09-12</a></time>
+            
+              <h1 class="title"><a href="/2014/09/12/-e6-95-99-e5-b8-88-e8-8a-82-e6-9d-a5-e4-ba-86-ef-bc-8c-e7-a5-9d-e5-a4-a9-e4-b8-8b-e7-9a-84-e8-80-81-e5-b8-88-e5-bf-ab-e4-b9-90-ef-bc-81-e7-a5-9d-e8-87-aa-e5-b7-b1-e5-bf-ab-e4-b9-90-ef-bc-81/">教师节来了，祝天下的老师快乐！祝自己快乐！</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-11T00:58:23.000Z"><a href="/2014/09/11/-e9-a9-be-e6-a0-a1-e7-a7-91-e4-b8-89-e8-ae-ad-e7-bb-83-e8-a7-86-e9-a2-91/">2014-09-11</a></time>
+            
+              <h1 class="title"><a href="/2014/09/11/-e9-a9-be-e6-a0-a1-e7-a7-91-e4-b8-89-e8-ae-ad-e7-bb-83-e8-a7-86-e9-a2-91/">驾校科三训练视频</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-09T07:54:32.000Z"><a href="/2014/09/09/-e5-8a-aa-e5-8a-9b-e5-af-bb-e6-89-be-e5-a5-bd-e7-9a-84-e7-a9-ba-e9-97-b4/">2014-09-9</a></time>
+            
+              <h1 class="title"><a href="/2014/09/09/-e5-8a-aa-e5-8a-9b-e5-af-bb-e6-89-be-e5-a5-bd-e7-9a-84-e7-a9-ba-e9-97-b4/">努力寻找好的空间</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-06T07:11:02.000Z"><a href="/2014/09/06/-e6-88-91-e7-9a-84-e4-bd-93-e9-87-8d-ef-bc-81/">2014-09-6</a></time>
+            
+              <h1 class="title"><a href="/2014/09/06/-e6-88-91-e7-9a-84-e4-bd-93-e9-87-8d-ef-bc-81/">我的体重！</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-05T13:17:07.000Z"><a href="/2014/09/05/-e5-86-8d-e8-af-95-e4-b8-83-e7-89-9b/">2014-09-5</a></time>
+            
+              <h1 class="title"><a href="/2014/09/05/-e5-86-8d-e8-af-95-e4-b8-83-e7-89-9b/">再试七牛</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-05T12:15:16.000Z"><a href="/2014/09/05/-e4-b8-83-e7-89-9b-e7-a9-ba-e9-97-b4-e5-bc-80-e9-80-9a-ef-bc-8c-e5-81-9a-e4-b8-ba-e5-9b-be-e7-89-87-e7-ae-a1-e7-90-86-e5-9c-b0-e5-9d-80/">2014-09-5</a></time>
+            
+              <h1 class="title"><a href="/2014/09/05/-e4-b8-83-e7-89-9b-e7-a9-ba-e9-97-b4-e5-bc-80-e9-80-9a-ef-bc-8c-e5-81-9a-e4-b8-ba-e5-9b-be-e7-89-87-e7-ae-a1-e7-90-86-e5-9c-b0-e5-9d-80/">七牛空间开通，做为图片管理地址</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-04T09:04:46.000Z"><a href="/2014/09/04/internet-download-manager-v6-21-build-8/">2014-09-4</a></time>
+            
+              <h1 class="title"><a href="/2014/09/04/internet-download-manager-v6-21-build-8/">Internet Download Manager V6.21 build10绿色版</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-03T08:57:24.000Z"><a href="/2014/09/03/windows2003-iis6-e5-ae-8c-e7-be-8e-e5-ae-9e-e7-8e-b0wordpress-e4-bc-aa-e9-9d-99-e6-80-81-e7-9a-84-e6-96-b9-e6-b3-95/">2014-09-3</a></time>
+            
+              <h1 class="title"><a href="/2014/09/03/windows2003-iis6-e5-ae-8c-e7-be-8e-e5-ae-9e-e7-8e-b0wordpress-e4-bc-aa-e9-9d-99-e6-80-81-e7-9a-84-e6-96-b9-e6-b3-95/">Windows2003 IIS6完美实现WordPress伪静态的方法</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-09-02T08:19:37.000Z"><a href="/2014/09/02/wordpress-e5-9b-ba-e5-ae-9a-e9-93-be-e6-8e-a5-e8-ae-be-e7-bd-ae-e7-9a-84-e5-87-a0-e7-a7-8d-e6-96-b9-e6-b3-95/">2014-09-2</a></time>
+            
+              <h1 class="title"><a href="/2014/09/02/wordpress-e5-9b-ba-e5-ae-9a-e9-93-be-e6-8e-a5-e8-ae-be-e7-bd-ae-e7-9a-84-e5-87-a0-e7-a7-8d-e6-96-b9-e6-b3-95/">WordPress固定链接设置的几种方法</a></h1>
             
           </header>
         </div>
@@ -84,16 +543,56 @@
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
     <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:lxy361.com">
+    <input type="hidden" name="q" value="site:szcx.github.io">
   </form>
 </div>
+
+  <div class="widget tag">
+<h3 class="title">博主简介</h3>
+<ul class="entry">
+<li><img width="150" img src="http://szcxgg.qiniudn.com/2014-10-30_135510.png" alt="" /></li>
+<li>本体：蓝涌</li>
+<li>二次元：遂州创信 | 蓝江老涌</li>
+<li>现状：帝都蜀地斗城一园丁</li>
+<li>想要交友的朋友请<a href="http://lxy361.tk/about">联系我</a>！</li>
+<li>QQ号： 87389166</li>
+</ul>
+</div>
+
+
 
   
 <div class="widget tag">
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Hexo/">Hexo</a><small>1</small></li>
+    <li><a href="/categories/Hexo/">Hexo</a><small>2</small></li>
+  
+    <li><a href="/categories/办公工具/">办公工具</a><small>6</small></li>
+  
+    <li><a href="/categories/图像工具/">图像工具</a><small>7</small></li>
+  
+    <li><a href="/categories/媒体工具/">媒体工具</a><small>4</small></li>
+  
+    <li><a href="/categories/学习/">学习</a><small>3</small></li>
+  
+    <li><a href="/categories/生活琐事/">生活琐事</a><small>27</small></li>
+  
+    <li><a href="/categories/图像工具/生活琐事/">生活琐事</a><small>2</small></li>
+  
+    <li><a href="/categories/媒体工具/生活琐事/">生活琐事</a><small>1</small></li>
+  
+    <li><a href="/categories/系统工具/">系统工具</a><small>12</small></li>
+  
+    <li><a href="/categories/媒体工具/系统工具/">系统工具</a><small>1</small></li>
+  
+    <li><a href="/categories/生活琐事/系统工具/">系统工具</a><small>1</small></li>
+  
+    <li><a href="/categories/图像工具/生活琐事/系统工具/">系统工具</a><small>1</small></li>
+  
+    <li><a href="/categories/生活琐事/网络工具/">网络工具</a><small>2</small></li>
+  
+    <li><a href="/categories/网络工具/">网络工具</a><small>13</small></li>
   
   </ul>
 </div>
@@ -103,17 +602,18 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/学习/" style="font-size: NaNpx;">学习</a>
+    <a href="/tags/2012/" style="font-size: 10.00px;">2012</a><a href="/tags/ESD/" style="font-size: 13.00px;">ESD</a><a href="/tags/Hexo/" style="font-size: 12.00px;">Hexo</a><a href="/tags/ISO/" style="font-size: 11.00px;">ISO</a><a href="/tags/OCR/" style="font-size: 10.00px;">OCR</a><a href="/tags/PE/" style="font-size: 12.00px;">PE</a><a href="/tags/QQ/" style="font-size: 10.00px;">QQ</a><a href="/tags/TC/" style="font-size: 10.00px;">TC</a><a href="/tags/ghost/" style="font-size: 10.00px;">ghost</a><a href="/tags/pdf/" style="font-size: 10.00px;">pdf</a><a href="/tags/wim/" style="font-size: 10.00px;">wim</a><a href="/tags/win10/" style="font-size: 10.00px;">win10</a><a href="/tags/win7/" style="font-size: 12.00px;">win7</a><a href="/tags/win8/" style="font-size: 11.00px;">win8</a><a href="/tags/windows/" style="font-size: 10.00px;">windows</a><a href="/tags/下载工具/" style="font-size: 12.00px;">下载工具</a><a href="/tags/代理/" style="font-size: 10.00px;">代理</a><a href="/tags/作业/" style="font-size: 11.00px;">作业</a><a href="/tags/便携绿色/" style="font-size: 19.00px;">便携绿色</a><a href="/tags/办公工具/" style="font-size: 14.00px;">办公工具</a><a href="/tags/博客/" style="font-size: 10.00px;">博客</a><a href="/tags/卸载/" style="font-size: 10.00px;">卸载</a><a href="/tags/压缩/" style="font-size: 10.00px;">压缩</a><a href="/tags/图像/" style="font-size: 16.00px;">图像</a><a href="/tags/图像工具/" style="font-size: 16.00px;">图像工具</a><a href="/tags/图片/" style="font-size: 18.00px;">图片</a><a href="/tags/媒体工具/" style="font-size: 14.00px;">媒体工具</a><a href="/tags/学习/" style="font-size: 20.00px;">学习</a><a href="/tags/学车/" style="font-size: 13.00px;">学车</a><a href="/tags/孩子/" style="font-size: 15.00px;">孩子</a><a href="/tags/安装/" style="font-size: 14.00px;">安装</a><a href="/tags/幽默/" style="font-size: 13.00px;">幽默</a><a href="/tags/截图/" style="font-size: 16.00px;">截图</a><a href="/tags/手机/" style="font-size: 11.00px;">手机</a><a href="/tags/拍照/" style="font-size: 16.00px;">拍照</a><a href="/tags/拦江/" style="font-size: 11.00px;">拦江</a><a href="/tags/搜索/" style="font-size: 10.00px;">搜索</a><a href="/tags/播放器/" style="font-size: 11.00px;">播放器</a><a href="/tags/操作系统/" style="font-size: 17.00px;">操作系统</a><a href="/tags/浏览器/" style="font-size: 12.00px;">浏览器</a>
   </div>
 </div>
 
 
-  
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2143921577&verifier=d71599c0&dpc=1"></iframe>
 
   <div class="widget tag">
 <h3 class="title">友情链接</h3>
 <ul class="entry">
 <li><a href="http://szcx.pw/" title="蓝江老涌的博客">遂州创信</a></li>
+<li><a href="http://lxy361.tk/" title="Hexo博客">Hexo博客</a></li>
 </ul>
 </div>
 </aside>
@@ -142,3 +642,6 @@
 
 </body>
 </html>
+
+
+<a href="https://github.com/szcx" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
